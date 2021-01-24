@@ -1,0 +1,11 @@
+- unless @one_rvns.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {rvns: @one_rvns}
+- unless @all_rvns.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {rvns: @all_rvns}
+
+- if @all_rvns.empty? and @one_rvns.empty?
+  h3.text-info.text-center = t('.empty')

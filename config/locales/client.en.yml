@@ -1,0 +1,372 @@
+en:
+  js:
+    brand: AUTRADEX EXCHANGE
+    submit: Submit
+    cancel: Cancel
+    confirm: Confirm
+    banks:
+      bb: 001 - Banco Do Brasil
+      cef: 104 - Caixa Econômica Federal
+      bmg: 318 - Banco BMG
+      inter: 077 - Banco Inter
+      itau: 341 - Itaú Unibanco
+      pan: 623 - Banco Pan
+      safra: 422 - Banco Safra
+      santander: 033 - Banco Santander
+      bbv: 655 - Banco Votorantim
+      bradesco: 237 - Banco Bradesco
+      nubank: 260 - Nu Pagamentos S.A
+    fund_sources:
+      manage_bank_account: Bank Account Management
+      manage_bank_account_desc: To facilitate the choice of bank withdrawals address
+      manage_coin_address: Coin Address Management
+      manage_coin_address_desc: To facilitate the choice of coin withdrawals address
+      bank: Bank
+      account: Bank Account
+      label: Label
+      address: Address
+      action: Action
+      add: Add
+      remove: Remove
+      default: Default
+    dividends:
+      agreement: Contract
+      agreement_accepted: Agreement accepted.
+      agreement_revoked: Agreement revoked.
+      intraday:
+        title: Intraday profit
+        time: Time
+        current: Current
+        previous: Volume
+        proft: Profit
+        no_data: There is no history data
+      daily:
+        title: Daily profit
+        time: Time
+        volume: Volume
+        proft: Profit
+        no_data: There is no history data
+    funds:
+      deposit: Deposit
+      withdraw: Withdraw
+      currency_name:
+        brl: BRL
+        btc: BTC
+        doge: DOGE
+        ltc: LTC
+        spero: AUTRADEX
+        mxt: MXT
+        rvn: RVN
+        da: GENIX
+        ac: AUS
+        ep: KONJ
+        ad: AUTX
+        bd: DLN
+        hb: STONE
+        am: BBX
+        at: BNJ
+        fz: PGN
+        ew: MW
+        an: BARE
+        fj: MNS
+        ba: DEQ
+      deposit_brl:
+        title: Depósito em Reais Brasileiros
+        desc: "ATENÇÃO! ESTE PAINEL É DE USO APENAS PARA USUÁRIOS BRASILEIROS. Para depositar via transferência bancária, siga estas etapas:"
+        desc_item_1: "1. Envie o formulário para obter o código de identificação."
+        desc_item_2: "2. Transfira o dinheiro para a conta bancária da AUTRADEX EXCHANGE. Certifique-se de que seu código de referência foi escrito no formulário que você preencheu."
+        desc_item_3: "3. Seu depósito será confirmado assim que o dinheiro for recebido."
+        attention: "Atenção: O nome da sua conta bancária deve ser o mesmo que o nome da sua conta no nosso site, caso contrário, o seu depósito poderá falhar."
+        from: De
+        to: Para
+        deposit_name: Seu Nome
+        deposit_account: Conta de Depósito
+        add: Add
+        manage: Gerenciar
+        amount: Valor do Depósito
+        min_amount: Valor Mínimo de R$20,00 (Vinte Reais)
+        to_account: Conta
+        to_name: Favorecido
+        to_bank_name: Agência
+        opening_bank_name: Banco
+        remark: 'Código de Referência (Código de Identificação da Transferência)'
+
+      deposit_btc:
+        title: BTC Deposit
+        latency: 1 Confirmation Required For Deposits
+
+      deposit_doge:
+        title: DOGE Deposit
+        latency: 9 Confirmations Required For Deposits
+
+      deposit_ltc:
+        title: LTC Deposit
+        latency: 9 Confirmations Required For Deposits
+
+      deposit_spero:
+        title: AUTRADEX Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_mxt:
+        title: MXT Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_rvn:
+        title: RVN Deposit
+        latency: 20 Confirmations Required For Deposits
+
+      deposit_da:
+        title: GENIX Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_ac:
+        title: AUS Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_ep:
+        title: KONJ Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_ad:
+        title: AUTX Deposit
+        latency: 5 Confirmations Required For Deposits
+
+      deposit_bd:
+        title: DLN Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_hb:
+        title: STONE Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_am:
+        title: BBX Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_at:
+        title: BNJ Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_fz:
+        title: PGN Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_ew:
+        title: MW Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_an:
+        title: BARE Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_fj:
+        title: MnodesPro Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_ba:
+        title: Dequant Deposit
+        latency: 25 Confirmations Required For Deposits
+
+      deposit_coin:
+        address: Address
+        new_address: New Address
+        confirm_gen_new_address: You sure want to generate a new deposit address?
+        open-wallet: Please use your common wallet services, local wallet, mobile terminal or online wallet, select a payment and send.
+        detail: Please paste the address below in your wallet, and fill in the amount you want to deposit, then confirm and send.
+        scan-qr: Scanning QR code to Pay for In the mobile terminal wallet.
+        after_deposit: Once you complete sending, you can check the status of your new deposit below.
+        mining_to_deposit: Attention! If you’re using an exchange wallet (your deposit address) for mining coins - you must take care your transactions don't exceed more than 1 time per hour. 
+          In other cases exchange administration do not guarantee safety of your transactions.
+        generate-new: Generate new address
+
+      deposit_history:
+        title: Deposit History
+        number: '#'
+        identification: Identification Code
+        time: Time
+        txid: Transaction ID
+        confirmations: Confirmations
+        from: From
+        amount: Amount
+        state_and_action: "State/Action"
+        cancel: cancel
+        no_data: There is no history data
+
+        submitting: Submitting
+        cancelled: Cancelled
+        submitted: Submitted
+        accepted: Accepted
+        rejected: Rejected
+        checked: Checked
+        warning: Warning
+        suspect: Suspect
+
+      withdraw_brl:
+        title: Saques em Reais Brasileiros
+        intro: ATENÇÃO! ESTE PAINEL É DE USO APENAS PARA USUÁRIOS BRASILEIROS. Selecione o banco para onde deseja sacar, insira o número da agência e conta, em seguida complete a solicitação.
+        intro_2: Sua conta bancária e nome devem ser os mesmos do nome da autenticação de nome real.
+        attention: "Horas de trabalho: 10:00 - 16:00"
+        account_name: Nome da conta
+        withdraw_address: Endereço de Saque
+        balance: Saldo
+        withdraw_amount: Retirar Montante
+        manage_withdraw: Gerenciar Retirada
+        fee_explain: Sobre as taxas
+        min: Quantidade Mínima 
+        withdraw_all: Retirar tudo
+
+      withdraw_btc:
+        title: BTC Withdraw
+
+      withdraw_doge:
+        title: DOGE Withdraw
+
+      withdraw_ltc:
+        title: LTC Withdraw
+
+      withdraw_spero:
+        title: AUTRADEX Withdraw
+
+      withdraw_mxt:
+        title: MXT Withdraw
+
+      withdraw_rvn:
+        title: RVN Withdraw
+
+      withdraw_da:
+        title: GENIX Withdraw
+
+      withdraw_ac:
+        title: AUS Withdraw
+
+      withdraw_ep:
+        title: KONJ Withdraw
+
+      withdraw_ad:
+        title: AUTX Withdraw
+
+      withdraw_bd:
+        title: DLN Withdraw
+
+      withdraw_hb:
+        title: STONE Withdraw
+
+      withdraw_am:
+        title: BBX Withdraw
+
+      withdraw_at:
+        title: BNJ Withdraw
+
+      withdraw_fz:
+        title: PGN Withdraw
+
+      withdraw_ew:
+        title: MW Withdraw
+
+      withdraw_an:
+        title: BARE Withdraw
+
+      withdraw_fj:
+        title: MnodePro Withdraw
+
+      withdraw_ba:
+        title: Dequant Withdraw
+
+      withdraw_coin:
+        intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
+        withdraw_limit_btc: Withdraw day limit is 0.5 for an unverified account. Fee 0.0004 BTC.
+        withdraw_limit_doge: Withdraw day limit is 500 000 for an unverified account. Fee 10 Doge.
+        withdraw_limit_ltc: Withdraw day limit is 1 000 for an unverified account. Fee 0.01 LTC
+        withdraw_limit_spero: Withdraw day limit is 10 000 for an unverified account.
+        withdraw_limit_mxt: Withdraw day limit is 10 000 for an unverified account.
+        withdraw_limit_rvn: Fee 1 RVN
+        withdraw_limit_da: Fee 15 Genix
+        withdraw_limit_ac: Fee 5 AUS
+        withdraw_limit_ep: Fee 15 Konj
+        withdraw_limit_ad: Fee 5 AUTX
+        withdraw_limit_bd: Fee 10 DLN
+        withdraw_limit_hb: Fee 10 STONE
+        withdraw_limit_am: Fee 0.01 BBX
+        withdraw_limit_at: Fee 1 BNJ
+        withdraw_limit_fz: Fee 10 PGN
+        withdraw_limit_ew: Fee 0.5 MW
+        withdraw_limit_an: Fee 0.5 BARE
+        withdraw_limit_fj: Fee 0.01 MNS
+        withdraw_limit_ba: Fee 0.01 DEQ
+
+        label: Label
+        balance: Balance
+        amount: Amount
+        manage_withdraw: Manage Address
+        min: Amount
+        withdraw_all: Withdraw all
+        fee_explain: About Fee
+
+      withdraw_history:
+        title: Withdraw History
+        number: Number
+        withdraw_time: Time
+        withdraw_account: Withdraw Account
+        withdraw_address: Address
+        withdraw_amount: Amount
+        actual_amount: Actual Amount
+        fee: Fee
+        miner_fee: Fee
+        state_and_action: "State/Action"
+        cancel: Cancel
+        no_data: There is no history data
+
+        submitting: Submitting
+        submitted: Submitted
+        rejected: Rejected
+        accepted: Accepted
+        suspect: Suspect
+        processing: Processing
+        coin_ready: Coin Ready
+        coin_done: Coin Done
+        done: Done
+        almost_done: Almost Done
+        canceled: Canceled
+        failed: Failed
+
+    auth:
+      please_active_two_factor: Please set google authenticator first.
+      submit: Submit
+      otp_placeholder: 6-digit password
+      google_app: Google Authenticator
+      sms: SMS Verification Messages
+      send_code: Send Code
+      send_code_alt: Resend in COUNT seconds
+      hints:
+        app: Google Authenticator will re-generate a new password every thirty seconds, please input timely.
+        sms: We'll send a text message to you phone with verify code.
+
+    markets:
+      market_list:
+        all: All Market
+        brl: BRL Market
+        btc: BTC Market
+        doge: DOGE Market
+        ltc: LTC Market
+        spero: AUTRADEX Market
+        mxt: MXT Market
+        rvn: RVN Market
+        da: GENIX Market
+        ac: AUS Market
+        ep: KONJ Market
+        ad: AUTX Market
+        bd: DLN Market
+        hb: STONE Market
+        am: BBX Market
+        at: BNJ Market
+        fz: PGN Market
+        ew: MW Market
+        an: BARE Market
+        fj: MNS Market
+        ba: DEQ Market
+
+    private:
+      history:
+        order:
+          currency:
+            da: GENIX

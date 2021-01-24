@@ -1,0 +1,11 @@
+- unless @one_fjs.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {fjs: @one_fjs}
+- unless @all_fjs.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {s: @all_fjs}
+
+- if @all_fjs.empty? and @one_fjs.empty?
+  h3.text-info.text-center = t('.empty')

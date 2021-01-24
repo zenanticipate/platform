@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @hb.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @hb, :id
+          = item_for @hb, :created_at
+          = item_for @hb, :aasm_state_text
+          hr.split
+          = item_for @hb.member, :name
+          = item_for @hb, :fund_extra
+          = item_for @hb, :fund_uid do
+            span = .fund_uid.truncate(40)
+          = item_for @hb, :amount
+          hr.split
+          = item_for @hb, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @hb.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @hb]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @hb.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @hb]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @hb.member}
+    = render partial: 'shared/admin/account', locals: {account: @.account}
