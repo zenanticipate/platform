@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Autradex Exchange</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="live/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="live/css/style.css">
+	<link rel="stylesheet" href="live/css/icons.css">
+	<link rel="stylesheet" href="live/css/ui.css">
+
+    <style>
+        *       {margin:0;padding:0;}
+        html, 
+        body    {height:100%;  width:100%; overflow:hidden;}
+        table   {height:100%;  width:100%; table-layout:static; border-collapse:collapse;}
+        iframe  {position:absolute; width:100%; height:80%;}
+        .header {border-bottom:1px solid #000}
+        .content {height:100%;}
+      </style>
+
+</head>
+<body class="crypt-dark">
+	<header>
+		<div class="container-full-width">
+			<div class="crypt-header">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-5">
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="exchange.html" target="autxframe">
+								<div class="crypt-logo"><img src="main/imgs/.png" alt="">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="crypt-mega-dropdown-menu">
+								  	<a href="exchange.html" target="autxframe" class="crypt-mega-dropdown-toggle">A U T R A D E X</a>
+								  	<div class="crypt-mega-dropdown-menu-block">
+								  		<div class="crypt-market-status">
+											<!--Dropdown menu can go here ? ?-->
+										</div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8 col-md-8 d-none d-md-block d-lg-block">
+						<ul class="crypt-heading-menu fright">
+							<li><a href="https://wallet.autradex.systems/markets/adbtc" target="autxframe">Markets</a></li>
+							<li><a href="https://wallet.autradex.systems/funds" target="autxframe">Wallet</a></li>
+							<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe_IfHJACvosnYnL2L1X8FriSIr8SSdiDn7xiTkzZU3SsC-kg/viewform?usp=sf_link" target="autxframe">Listing Request</a></li>
+							<!--<li><a href="https://wallet.autradex.systmes" target="autxframe">Overview</a></li>
+							<li><a href="marketcap.html">Market Cap</a></li>-->
+                            <li class="crypt-box-menu menu-green"><a href="https://wallet.autradex.systems/signin" target="autxframe">login</a></li>
+                            <li class="crypt-box-menu menu-red"><a href="https://wallet.autradex.systems/signup" target="autxframe">register</a></li>
+						</ul>
+					</div>
+					<i class="menu-toggle pe-7s-menu d-xs-block d-sm-block d-md-none d-sm-none"></i>
+				</div>
+			</div>
+		</div>
+		<div class="crypt-mobile-menu">
+			<ul class="">
+				<li class="active"><a href="">Exchange</a></li>
+				<li><a href="">Market Cap</a></li>
+				<li><a href="">Trending</a></li>
+				<li><a href="">Tools</a></li>
+				<li class="crypt-box-menu menu-red"><a href="https://wallet.autradex.systems/signup" target="autxframe">register</a></li>
+				<li class="crypt-box-menu menu-green"><a href="https://wallet.autradex.systems/signin" target="autxframe">login</a></li>
+			</ul>
+			
+		</div>
+	</header>
+	<!-- Main Content -->
+    <footer>
+	    &nbsp;<br>&nbsp;<br>
+    <div id="content">
+    <iframe name="autxframe" src="exchange.html" style="border:none;" scrolling="yes">
+        Sorry your browser does not support inline frames.
+      </iframe>
+    </div>
+	</center>
+<!--	<footer>-->
+        <br>&nbsp;<br>
+		<center><img src="main/imgs/autradex2.png" width="200"></center>
+	</footer>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>

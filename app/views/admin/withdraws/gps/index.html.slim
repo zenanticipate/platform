@@ -1,0 +1,11 @@
+- unless @one_gps.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {gps: @one_gps}
+- unless @all_gps.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {s: @all_gps}
+
+- if @all_gps.empty? and @one_gps.empty?
+  h3.text-info.text-center = t('.empty')

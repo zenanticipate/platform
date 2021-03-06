@@ -39,6 +39,9 @@ en:
       withdraws/an: Withdraw
       withdraws/fj: Withdraw
       withdraws/ba: Withdraw
+      withdraws/et: Withdraw
+      withdraws/hv: Withdraw
+      withdraws/gp: Withdraw
 
     attributes:
       api_token:
@@ -296,6 +299,24 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/ba:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/et:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/hv:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/gp:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -568,6 +589,48 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/et:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/hv:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/gp:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
 
     errors:
       models:
@@ -652,6 +715,12 @@ en:
               fj_invalid: Invalid Address
               ba_ismine: Used Address
               ba_invalid: Invalid Address
+              et_ismine: Used Address
+              et_invalid: Invalid Address
+              hv_ismine: Used Address
+              hv_invalid: Invalid Address
+              gp_ismine: Used Address
+              gp_invalid: Invalid Address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
           attributes:
@@ -774,6 +843,24 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/et:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/hv:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/gp:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
 
         two_factor:
           attributes:
@@ -833,6 +920,9 @@ en:
       an: BARE
       fj: MNS
       ba: DEQ
+      et: MCC
+      hv: UQB
+      gp: RTM
   currency:
     satoshi:
       key: BTC
@@ -927,6 +1017,21 @@ en:
       key: ba
       code: DEQ
       name: Dequant
+      format: '0,0.000'
+    et:
+      key: et
+      code: MCC
+      name: MinecraftCoin
+      format: '0,0.000'
+    hv:
+      key: hv
+      code: hv
+      name: Ubiquitium Coin
+      format: '0,0.000'
+    gp:
+      key: gp
+      code: gp
+      name: Raptoreum Coin
       format: '0,0.000'
     ether:
       key: ETH
@@ -1231,6 +1336,27 @@ en:
       latency: 10 confirmations
       transfer: Manual
       go: Deposit
+    et:
+      key: Block Chain
+      title: Minecraft Coin Deposits
+      intro: Deposit MinecraftCoin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    hv:
+      key: Block Chain
+      title: Ubiquitium Coin Deposits
+      intro: Deposit Ubiquitium Coin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 25 confirmations
+      transfer: Manual
+      go: Deposit
+    gp:
+      key: Block Chain
+      title: Raptoreum Deposits
+      intro: Deposit Raptoreum Coin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 15 confirmations
+      transfer: Manual
+      go: Deposit
   deposits/bank:
     aasm_state:
       submitting: Submitting
@@ -1307,6 +1433,15 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       bas:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      ets:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      hvs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      gps:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       banks:
@@ -1400,6 +1535,15 @@ en:
         babtc: DEQ/BTC
         badoge: DEQ/DOGE
         baltc: DEQ/LTC
+        etbtc: MCC/BTC
+        etdoge: MCC/DOGE
+        etltc: MCC/LTC
+        hvbtc: UQB/BTC
+        hvdoge: UQB/DOGE
+        hvltc: UQB/LTC
+        gpbtc: RTM/BTC
+        gpdoge: RTM/DOGE
+        gpltc: RTM/LTC
       trades:
         trade_history: Trade History
         side: Side
@@ -1429,6 +1573,9 @@ en:
         an: BARE
         fj: MNS
         ba: DEQ
+        et: MCC
+        hv: UQB
+        gp: RTM
     trade:
       trades:
         orders:
@@ -1760,6 +1907,51 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      ets:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      hvs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      gps:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
     tickets:
       index:
         new_ticket: New Ticket
@@ -1850,6 +2042,9 @@ en:
         an-assets: BARE Assets
         fj-assets: MNS Assets
         ba-assets: DEQ Assets
+        et-assets: MCC Assets
+        hv-assets: UQB Assets
+        gp-assets: RTM Assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-brl: Verify My BRL Assets
@@ -1872,6 +2067,9 @@ en:
         verify-an: Verify My BARE Assets
         verify-fj: Verify My MNS Assets
         verify-ba: Verify My DEQ Assets
+        verify-et: Verify My MCC Assets
+        verify-hv: Verify My UQB Assets
+        verify-gp: Verify My RTM Assets
         btc-assets-total: 'Total BTC assets of exchange: '
         brl-assets-total: 'Total BRL assets of exchange: '
         eth-assets-total: 'Total ETH assets of exchange: '
@@ -1893,6 +2091,9 @@ en:
         an-assets-total: 'Total BARE assets of exchange: '
         fj-assets-total: 'Total MNS assets of exchange: '
         ba-assets-total: 'Total DEQ assets of exchange: '
+        et-assets-total: 'Total MCC assets of exchange: '
+        hv-assets-total: 'Total UQB assets of exchange: '
+        gp-assets-total: 'Total RTM assets of exchange: '
       liability_proof:
         title: Proof of Liabilities
         intro: As an exchange, our liabilities refer to the sum of money (in both
@@ -2009,6 +2210,21 @@ en:
         intro: All of exchange's DEQ assets are listed here.
         total: Total DEQ Assets
         address: Address
+      et_assets:
+        title: MCC Assets
+        intro: All of exchange's MCC assets are listed here.
+        total: Total MCC Assets
+        address: Address
+      hv_assets:
+        title: UQB Assets
+        intro: All of exchange's UQB assets are listed here.
+        total: Total UQB Assets
+        address: Address
+      gp_assets:
+        title: RTM Assets
+        intro: All of exchange's RTM assets are listed here.
+        total: Total RTM Assets
+        address: Address
       brl_assets:
         title: BRL Assets
         intro: All of exchange's BRL assets are listed here.
@@ -2045,6 +2261,9 @@ en:
         an_format: '0.00000000'
         fj_format: '0.00000000'
         ba_format: '0.00000000'
+        et_format: '0.00000000'
+        hv_format: '0.00000000'
+        gp_format: '0.00000000'
         reason:
           brl:
             strike_add: Plus
@@ -2172,6 +2391,24 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          et:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          hv:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          gp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
         ref:
           system: System
           default: Default
@@ -2235,6 +2472,9 @@ en:
         an_html: "<i class='fa fa-check'></i><span>BARE Markets</span>"
         fj_html: "<i class='fa fa-check'></i><span>MNS Markets</span>"
         ba_html: "<i class='fa fa-check'></i><span>DEQ Markets</span>"
+        et_html: "<i class='fa fa-check'></i><span>MCC Markets</span>"
+        hv_html: "<i class='fa fa-check'></i><span>UQB Markets</span>"
+        gp_html: "<i class='fa fa-check'></i><span>RTM Markets</span>"
         price: Price
         change: "24h"
       range_switch:
@@ -2449,6 +2689,9 @@ en:
         an_format: '0.00000000'
         fj_format: '0.00000000'
         ba_format: '0.00000000'
+        et_format: '0.00000000'
+        hv_format: '0.00000000'
+        gp_format: '0.00000000'
         total: Total
   guides:
     private:
@@ -2613,6 +2856,15 @@ en:
         ba:
           sum: Minimum amount 50
           fund_extra: Enter a label for this address (optional)
+        et:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        hv:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        gp:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
     hints:
       deposit:
         bank:
@@ -2678,6 +2930,12 @@ en:
         fj:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         ba:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        et:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        hv:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        gp:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -2854,6 +3112,27 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        et:
+          fee: Fee
+          sum: Amount
+          fund_uid: MCC Coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        hv:
+          fee: Fee
+          sum: Amount
+          fund_uid: UQB Coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        gp:
+          fee: Fee
+          sum: Amount
+          fund_uid: RTM Coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
   admin:
     deposits:
       banks:
@@ -2979,6 +3258,24 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       bas:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      ets:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      hvs:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      gps:
         update:
           notice: The deposit was successful.
         index:
@@ -3285,6 +3582,42 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      ets:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      hvs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      gps:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
   deposits/satoshi:
     aasm_state:
       submitted: Submitted
@@ -3394,6 +3727,24 @@ en:
       checked: Checked
       warning: Warning
   deposits/ba:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/et:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/hv:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/gp:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -3608,6 +3959,30 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    et:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    hv:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    gp:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     bank:
       sn: SN
       amount: Amount
@@ -3658,6 +4033,9 @@ en:
       an: BARE
       fj: MNS
       ba: DEQ
+      et: MCC
+      hv: UQB
+      gp: RTM
     order:
       state:
         done: DONE
@@ -3703,6 +4081,9 @@ en:
         an: BARE Coin
         fj: MnodesPro
         ba: Dequant
+        et: MinecraftCoin
+        hv: Ubiquitium
+        gp: Raptoreum
         bank: Bank
     id_document:
       id_document_type:
@@ -4327,6 +4708,27 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
+    et:
+      key: Blockchain
+      title: MCC Blockchain
+      intro: Withdraw MCC Coin to your own MCC wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    hv:
+      key: Blockchain
+      title: UQB Blockchain
+      intro: Withdraw UQB Coin to your own UQB wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    gp:
+      key: Blockchain
+      title: RTM Blockchain
+      intro: Withdraw RTM Coin to your own RTM wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
   listing_requests:
     new:
       title: Listing request
@@ -4590,6 +4992,42 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/ba:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/et:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/hv:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/gp:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

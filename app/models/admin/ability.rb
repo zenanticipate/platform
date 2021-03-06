@@ -37,6 +37,9 @@ module Admin
       can :manage, ::Deposits::An
       can :manage, ::Deposits::Fj
       can :manage, ::Deposits::Ba
+      can :manage, ::Deposits::Et
+      can :manage, ::Deposits::Hv
+      can :manage, ::Deposits::Gp
 
       can :menu, Withdraw
       can :manage, ::Withdraws::Bank
@@ -60,6 +63,9 @@ module Admin
       can :manage, ::Withdraws::An
       can :manage, ::Withdraws::Fj
       can :manage, ::Withdraws::Ba
+      can :manage, ::Withdraws::Et
+      can :manage, ::Withdraws::Hv
+      can :manage, ::Withdraws::Gp
 
     end
   end

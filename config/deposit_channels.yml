@@ -104,3 +104,18 @@
   currency: ba
   min_confirm: 10
   max_confirm: 50
+- id: 4200
+  key: et
+  currency: et
+  min_confirm: 50
+  max_confirm: 100
+- id: 4400
+  key: hv
+  currency: hv
+  min_confirm: 25
+  max_confirm: 100
+- id: 4600
+  key: gp
+  currency: gp
+  min_confirm: 15
+  max_confirm: 100

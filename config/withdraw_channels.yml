@@ -3,6 +3,7 @@
   currency: btc
   fixed: 8
   fee: 0.0004
+  max: 0.1
   inuse: true
   type: WithdrawChannelSatoshi
 - id: 400
@@ -20,16 +21,16 @@
   key: doge
   currency: doge
   fixed: 8
-  max: 500000
-  fee: 10.00
+  max: 100000
+  fee: 50.00
   inuse: true
   type: WithdrawChannelDoge
 - id: 800
   key: ltc
   currency: ltc
   fixed: 8
-  max: 1000
-  fee: 0.01
+  max: 20
+  fee: 0.04
   inuse: true
   type: WithdrawChannelLtc
 - id: 1000
@@ -160,3 +161,26 @@
   fee: 0.01
   inuse: true
   type: WithdrawChannelBa
+- id: 4200
+  key: et
+  currency: et
+  fixed: 8
+  max: 99999999999
+  fee: 1
+  inuse: true
+  type: WithdrawChannelEt
+- id: 4400
+  key: hv
+  currency: hv
+  fixed: 8
+  max: 99999999999
+  fee: 1
+  inuse: true
+  type: WithdrawChannelHv
+- id: 4600
+  key: gp
+  currency: gp
+  fixed: 8
+  fee: 0.01
+  inuse: true
+  type: WithdrawChannelGp

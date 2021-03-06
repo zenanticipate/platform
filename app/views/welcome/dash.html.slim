@@ -1,0 +1,54 @@
+header.text-center
+  .container
+    .jumbotron style="background-image:url('imgs/logo.png');height:200px;background-repeat:no-repeat;background-position:center;background-color:#f5f5f9"
+     #getstart.row style="margin:250px 0 0 30px"
+          - unless current_user
+            .col-xs-6.col-xs-offset-9.text-center
+              a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
+              a href="#{signin_path}" class="btn btn-success btn-lg btn-block" style="background-color: #999999; border-color: #999999" onMouseOver="this.style.backgroundColor='#737373'" onMouseOut="this.style.backgroundColor='#999999'" role="button" = t("header.signin")
+              - if ENV['SIGNUP_ALLOWED'] == "true"
+                a href="#{signup_path}" class="btn btn-warning btn-lg btn-block" role="button" = t("header.signup")
+          - else
+            .btn-group
+              a href="#{market_path(current_market)}" class="btn btn-default" role="button" = t("header.getstart")
+              a href="#{funds_path}" class="btn btn-default" role="button" = t("header.funds")
+              a href="#{settings_path}" class="btn btn-default" role="button" = t("header.settings")
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    center
+        h2 style="font-weight:bolder" = t("slogan")
+        a href="https://wallet.autradex.systems/markets/adbtc" style="margin:5px"
+         img src="imgs/btc.png"
+        a href="https://wallet.autradex.systems/markets/ltcbtc" style="margin:5px"
+         img src="imgs/ltc.png"
+        a href="https://wallet.autradex.systems/markets/dogebtc" style="margin:5px"
+         img src="imgs/doge.png"
+    br
+    br
+    .col-xs-offset-8.col-xs-4
+        a href="https://autradex.systems" target="_blank" class="btn btn-primary btn-block" role="button" = "Home"
+    .col-xs-4
+        a href="https://docs.google.com/forms/d/e/1FAIpQLSe_IfHJACvosnYnL2L1X8FriSIr8SSdiDn7xiTkzZU3SsC-kg/viewform?usp=sf_link" target="_blank" class="btn btn-primary btn-block" role="button" = "Listing Request"
+    br
+    br
+    center
+        h2 style="font-weight:bolder" = "A U T R A D E X"
+        img src="imgs/peatio3.png"
+    br
+    br
+    center
+        h5 style="font-weight:bolder" = "Important, Please Read:."
+    br
+        h5 style="font-weight:bolder" = "Trading is very risky. Consult a financial advisor. Do not believe everything you read. AUTRADEX EXCHANGER is not responsible for any trading decisions and makes no endorsements."
+    br
+    center
+        .tradingview-widget-container
+           .tradingview-widget-container__widget
+           .tradingview-widget-copyright
+<br>

@@ -25,6 +25,9 @@ module Private
       @an_proof   = Proof.current :an
       @fj_proof   = Proof.current :fj
       @ba_proof   = Proof.current :ba
+      @et_proof   = Proof.current :et
+      @hv_proof   = Proof.current :hv
+      @gp_proof   = Proof.current :gp
       #proof
 
       if current_user
@@ -49,6 +52,9 @@ module Private
         @an_account = current_user.accounts.with_currency(:an).first
         @fj_account = current_user.accounts.with_currency(:fj).first
         @ba_account = current_user.accounts.with_currency(:ba).first
+        @et_account = current_user.accounts.with_currency(:et).first
+        @hv_account = current_user.accounts.with_currency(:hv).first
+        @gp_account = current_user.accounts.with_currency(:gp).first
         #account
       end
     end

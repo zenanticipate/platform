@@ -154,3 +154,24 @@
           == t("currency.icon.ba")
           = @ba_proof.sum
       = render 'liability_data', account: @ba_account, proof: @ba_proof
+    #et-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.et-assets-total')
+        span.currency
+          == t("currency.icon.et")
+          = @et_proof.sum
+      = render 'liability_data', account: @et_account, proof: @et_proof
+    #hv-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.hv-assets-total')
+        span.currency
+          == t("currency.icon.hv")
+          = @hv_proof.sum
+      = render 'liability_data', account: @hv_account, proof: @hv_proof
+    #gp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.gp-assets-total')
+        span.currency
+          == t("currency.icon.gp")
+          = @gp_proof.sum
+      = render 'liability_data', account: @gp_account, proof: @gp_proof

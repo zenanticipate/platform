@@ -1,0 +1,41 @@
+<section class="withdraw-instruction">
+  <div class="row">
+    <div class="col-sm-4">
+      <h4 class="steps">1</h4>
+    </div>
+
+    <div class="col-sm-20">
+      <p> 50% off trading fees. Please deposit 100autx only to this address. <br>All coins are non refundable, this is a lifetime membership. </p>
+    </div>
+  </div>
+
+  <hr class="split">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h4 class="steps">2</h4>
+    </div>
+    <div class="col-sm-20">
+      <ng-include src="'/templates/funds/_qrcode.html'"></ng-include>
+
+      <p class="clearfix">{{"funds.deposit_coin.detail" | t}}</p>
+
+      <ng-include src="'/templates/funds/_address.html'"></ng-include>
+
+      <br>{{"funds.deposit_coin.scan-qr" | t}}
+
+    </div>
+  </div>
+
+  <hr class="split">
+
+  <div class="row">
+    <div class="col-sm-4"><h4 class="steps">3</h4></div>
+    <div class="col-sm-20">
+      <p>Once the deposit is confirmed you will see a star next to your username when trading.</p>
+    </div>
+  </div>
+
+ <hr class="split">
+
+</section>

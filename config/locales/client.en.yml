@@ -70,6 +70,9 @@ en:
         an: BARE
         fj: MNS
         ba: DEQ
+        et: MCC
+        hv: UQB
+        gp: RTM
       deposit_brl:
         title: Depósito em Reais Brasileiros
         desc: "ATENÇÃO! ESTE PAINEL É DE USO APENAS PARA USUÁRIOS BRASILEIROS. Para depositar via transferência bancária, siga estas etapas:"
@@ -165,7 +168,19 @@ en:
 
       deposit_ba:
         title: Dequant Deposit
+        latency: 10 Confirmations Required For Deposits
+
+      deposit_et:
+        title: Minecraft Coin Deposit
+        latency: 50 Confirmations Required For Deposits
+
+      deposit_hv:
+        title: Ubiquitium Coin Deposit
         latency: 25 Confirmations Required For Deposits
+
+      deposit_gp:
+        title: Raptoreum Coin Deposit
+        latency: 15 Confirmations Required For Deposits
 
       deposit_coin:
         address: Address
@@ -272,11 +287,20 @@ en:
       withdraw_ba:
         title: Dequant Withdraw
 
+      withdraw_et:
+        title: Minecraft Coin Withdraw
+
+      withdraw_hv:
+        title: Ubiquitium Coin Withdraw
+
+      withdraw_gp:
+        title: Raptoreum Coin Withdraw
+
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
-        withdraw_limit_btc: Withdraw day limit is 0.5 for an unverified account. Fee 0.0004 BTC.
-        withdraw_limit_doge: Withdraw day limit is 500 000 for an unverified account. Fee 10 Doge.
-        withdraw_limit_ltc: Withdraw day limit is 1 000 for an unverified account. Fee 0.01 LTC
+        withdraw_limit_btc: Withdraw day limit is 0.1 for an unverified account. Fee 0.0004 BTC.
+        withdraw_limit_doge: Withdraw day limit is 100 000 for an unverified account. Fee 50 Doge.
+        withdraw_limit_ltc: Withdraw day limit is 20 for an unverified account. Fee 0.04 LTC
         withdraw_limit_spero: Withdraw day limit is 10 000 for an unverified account.
         withdraw_limit_mxt: Withdraw day limit is 10 000 for an unverified account.
         withdraw_limit_rvn: Fee 1 RVN
@@ -293,6 +317,9 @@ en:
         withdraw_limit_an: Fee 0.5 BARE
         withdraw_limit_fj: Fee 0.01 MNS
         withdraw_limit_ba: Fee 0.01 DEQ
+        withdraw_limit_et: Fee 1
+        withdraw_limit_hv: Fee 1
+        withdraw_limit_gp: Fee 0.01
 
         label: Label
         balance: Balance
@@ -364,6 +391,9 @@ en:
         an: BARE Market
         fj: MNS Market
         ba: DEQ Market
+        et: MCC Market
+        hv: UBQ Market
+        gp: RTM Market
 
     private:
       history:
