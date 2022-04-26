@@ -2,7 +2,7 @@
   key: satoshi
   currency: btc
   sort_order: 1
-  min_confirm: 1
+  min_confirm: 2
   max_confirm: 3
 - id: 400
   key: bank
@@ -42,80 +42,110 @@
 - id: 1600
   key: da
   currency: da
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 1800
   key: ac
   currency: ac
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 2000
   key: ep
   currency: ep
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 2200
   key: ad
   currency: ad
-  min_confirm: 5
-  max_confirm: 10
+  min_confirm: 100
+  max_confirm: 100
 - id: 2400
   key: bd
   currency: bd
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 2600
   key: hb
   currency: hb
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 2800
   key: am
   currency: am
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 3000
   key: at
   currency: at
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 3200
   key: fz
   currency: fz
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 3400
   key: ew
   currency: ew
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 3600
   key: an
   currency: an
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 3800
   key: fj
   currency: fj
-  min_confirm: 25
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 4000
   key: ba
   currency: ba
-  min_confirm: 10
-  max_confirm: 50
+  min_confirm: 100
+  max_confirm: 100
 - id: 4200
   key: et
   currency: et
-  min_confirm: 50
+  min_confirm: 100
   max_confirm: 100
 - id: 4400
   key: hv
   currency: hv
-  min_confirm: 25
+  min_confirm: 100
   max_confirm: 100
 - id: 4600
   key: gp
   currency: gp
-  min_confirm: 15
+  min_confirm: 100
+  max_confirm: 100
+- id: 4800
+  key: gc
+  currency: gc
+  min_confirm: 100
+  max_confirm: 100
+- id: 5000
+  key: fm
+  currency: fm
+  min_confirm: 100
+  max_confirm: 100
+- id: 5200
+  key: bs
+  currency: bs
+  min_confirm: 100
+  max_confirm: 100
+- id: 5400
+  key: bt
+  currency: bt
+  min_confirm: 100
+  max_confirm: 100
+- id: 5600
+  key: bp
+  currency: bp
+  min_confirm: 100
+  max_confirm: 100
+- id: 5800
+  key: ap
+  currency: ap
+  min_confirm: 10
   max_confirm: 100

@@ -42,6 +42,12 @@ en:
       withdraws/et: Withdraw
       withdraws/hv: Withdraw
       withdraws/gp: Withdraw
+      withdraws/gc: Withdraw
+      withdraws/fm: Withdraw
+      withdraws/bs: Withdraw
+      withdraws/bt: Withdraw
+      withdraws/bp: Withdraw
+      withdraws/ap: Withdraw
 
     attributes:
       api_token:
@@ -317,6 +323,42 @@ en:
         confirmations: Confirmation
         aasm_state_text: State
       deposits/gp:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/gc:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/fm:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bs:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bt:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bp:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/ap:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -631,6 +673,90 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
+      withdraws/gc:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/fm:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bs:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bt:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bp:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/ap:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
 
     errors:
       models:
@@ -721,6 +847,18 @@ en:
               hv_invalid: Invalid Address
               gp_ismine: Used Address
               gp_invalid: Invalid Address
+              gc_ismine: Used Address
+              gc_invalid: Invalid Address
+              fm_ismine: Used Address
+              fm_invalid: Invalid Address
+              bs_ismine: Used Address
+              bs_invalid: Invalid Address
+              bt_ismine: Used Address
+              bt_invalid: Invalid Address
+              bp_ismine: Used Address
+              bp_invalid: Invalid Address
+              ap_ismine: Used Address
+              ap_invalid: Invalid Address
         withdraw:
           account_balance_is_poor: Account balance is insufficient
           attributes:
@@ -861,6 +999,42 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/gc:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/fm:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bs:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bt:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bp:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/ap:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
 
         two_factor:
           attributes:
@@ -923,6 +1097,12 @@ en:
       et: MCC
       hv: UQB
       gp: RTM
+      gc: PA
+      fm: NS
+      bs: DINGO
+      bt: DINGO
+      bp: DINGO
+      ap: BCH
   currency:
     satoshi:
       key: BTC
@@ -1019,19 +1199,49 @@ en:
       name: Dequant
       format: '0,0.000'
     et:
-      key: et
+      key: MCC
       code: MCC
       name: MinecraftCoin
       format: '0,0.000'
     hv:
-      key: hv
-      code: hv
+      key: UBQ
+      code: UBQ
       name: Ubiquitium Coin
       format: '0,0.000'
     gp:
-      key: gp
-      code: gp
+      key: RTM
+      code: RTM
       name: Raptoreum Coin
+      format: '0,0.000'
+    gc:
+      key: PA
+      code: PA
+      name: Polar Coin
+      format: '0,0.000'
+    fm:
+      key: NS
+      code: NS
+      name: Nodestats Coin
+      format: '0,0.000'
+    bs:
+      key: DINGOS
+      code: DINGOS
+      name: Dingocoin
+      format: '0,0.000'
+    bt:
+      key: DINGOT
+      code: DINGOT
+      name: Dingocoin
+      format: '0,0.000'
+    bp:
+      key: DINGO
+      code: DINGO
+      name: Dingocoin
+      format: '0,0.000'
+    ap:
+      key: BCH
+      code: BCH
+      name: Bitcoin Cash
       format: '0,0.000'
     ether:
       key: ETH
@@ -1221,14 +1431,14 @@ en:
       key: Block Chain
       title: Litecoin Deposits
       intro: Deposit litecoin from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 1 confirmation
+      latency: 10 confirmations
       transfer: Manual
       go: Deposit
     spero:
       key: Block Chain
       title: Autradex Deposits
       intro: Deposit autradex from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 1 confirmation
+      latency: 10 confirmations
       transfer: Manual
       go: Deposit
     mxt:
@@ -1242,98 +1452,98 @@ en:
       key: Block Chain
       title: Ravencoin Deposits
       intro: Deposit Ravencoin from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 1 confirmation
+      latency: 10 confirmations
       transfer: Manual
       go: Deposit
     da:
       key: Block Chain
       title: Genix Deposits
       intro: Deposit Genix from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 1 confirmation
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     ac:
       key: Block Chain
       title: AusCash Deposits
       intro: Deposit AusCash from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     ep:
       key: Block Chain
       title: Konjungate Deposits
       intro: Deposit Konjungate Coin from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     ad:
       key: Block Chain
       title: Autradex Coin Deposits
       intro: Deposit Autradex Coin from your own wallet address to AUTRADEX EXCHANGE account
-      latency: 5 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     bd:
       key: Block Chain
       title: Delion Coin Deposits
       intro: Deposit Delion Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 5 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     hb:
       key: Block Chain
       title: Stone Coin Deposits
       intro: Deposit Stone Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     am:
       key: Block Chain
       title: BallotBox Coin Deposits
       intro: Deposit BallotBox Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     at:
       key: Block Chain
       title: Binjit Coin Deposits
       intro: Deposit Binjit Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     fz:
       key: Block Chain
       title: Pigeoncoin Deposits
       intro: Deposit Pigeoncoin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     ew:
       key: Block Chain
       title: MasterWin Deposits
       intro: Deposit MasterWin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     an:
       key: Block Chain
       title: BARE Deposits
       intro: Deposit BARE from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     fj:
       key: Block Chain
       title: MnodesPro Deposits
       intro: Deposit MnodesPro from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     ba:
       key: Block Chain
       title: Dequant Deposits
       intro: Deposit Dequant from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 10 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     et:
@@ -1347,14 +1557,56 @@ en:
       key: Block Chain
       title: Ubiquitium Coin Deposits
       intro: Deposit Ubiquitium Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 25 confirmations
+      latency: 50 confirmations
       transfer: Manual
       go: Deposit
     gp:
       key: Block Chain
       title: Raptoreum Deposits
       intro: Deposit Raptoreum Coin from your own wallet address to your AUTRADEX EXCHANGE account
-      latency: 15 confirmations
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    gc:
+      key: Block Chain
+      title: Polar Deposits
+      intro: Deposit Polar Coin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    fm:
+      key: Block Chain
+      title: Nodestats Deposits
+      intro: Deposit Nodestats Coin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    bs:
+      key: Block Chain
+      title: Dingocoin Deposits
+      intro: Deposit Dingocoin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    bt:
+      key: Block Chain
+      title: Dingocoin Deposits
+      intro: Deposit Dingocoin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    bp:
+      key: Block Chain
+      title: Dingocoin Deposits
+      intro: Deposit Dingocoin from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 50 confirmations
+      transfer: Manual
+      go: Deposit
+    ap:
+      key: Block Chain
+      title: Bitcoin Cash Deposits
+      intro: Deposit Bitcoin Cash from your own wallet address to your AUTRADEX EXCHANGE account
+      latency: 100 confirmations
       transfer: Manual
       go: Deposit
   deposits/bank:
@@ -1442,6 +1694,24 @@ en:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       gps:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      gcs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      fms:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bts:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bps:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      aps:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       banks:
@@ -1544,6 +1814,27 @@ en:
         gpbtc: RTM/BTC
         gpdoge: RTM/DOGE
         gpltc: RTM/LTC
+        gcbtc: PA/BTC
+        gcdoge: PA/DOGE
+        gcltc: PA/LTC
+        fmbtc: NS/BTC
+        fmdoge: NS/DOGE
+        fmltc: NS/LTC
+        bsac: DINGO/AUS
+        bsbtc: DINGO/BTC
+        bsdoge: DINGO/DOGE
+        bsltc: DINGO/LTC
+        btac: DINGO/AUS
+        btbtc: DINGO/BTC
+        btdoge: DINGO/DOGE
+        btltc: DINGO/LTC
+        bpac: DINGO/AUS
+        bpbtc: DINGO/BTC
+        bpdoge: DINGO/DOGE
+        bpltc: DINGO/LTC
+        apbtc: BCH/BTC
+        apdoge: BCH/DOGE
+        apltc: BCH/LTC
       trades:
         trade_history: Trade History
         side: Side
@@ -1576,6 +1867,12 @@ en:
         et: MCC
         hv: UQB
         gp: RTM
+        gc: PA
+        fm: NS
+        bs: DINGO
+        bt: DINGO
+        bp: DINGO
+        ap: BCH
     trade:
       trades:
         orders:
@@ -1952,6 +2249,96 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      gcs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      fms:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bts:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bps:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      aps:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
     tickets:
       index:
         new_ticket: New Ticket
@@ -2045,6 +2432,12 @@ en:
         et-assets: MCC Assets
         hv-assets: UQB Assets
         gp-assets: RTM Assets
+        gc-assets: PA Assets
+        fm-assets: NS Assets
+        bs-assets: DINGO Assets
+        bt-assets: DINGO Assets
+        bp-assets: DINGO Assets
+        ap-assets: BCH Assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-brl: Verify My BRL Assets
@@ -2070,6 +2463,12 @@ en:
         verify-et: Verify My MCC Assets
         verify-hv: Verify My UQB Assets
         verify-gp: Verify My RTM Assets
+        verify-gc: Verify My PA Assets
+        verify-fm: Verify My NS Assets
+        verify-bs: Verify My DINGO Assets
+        verify-bt: Verify My DINGO Assets
+        verify-bp: Verify My DINGO Assets
+        verify-ap: Verify My BCH Assets
         btc-assets-total: 'Total BTC assets of exchange: '
         brl-assets-total: 'Total BRL assets of exchange: '
         eth-assets-total: 'Total ETH assets of exchange: '
@@ -2094,6 +2493,12 @@ en:
         et-assets-total: 'Total MCC assets of exchange: '
         hv-assets-total: 'Total UQB assets of exchange: '
         gp-assets-total: 'Total RTM assets of exchange: '
+        gc-assets-total: 'Total PA assets of exchange: '
+        fm-assets-total: 'Total NS assets of exchange: '
+        bs-assets-total: 'Total DINGO assets of exchange: '
+        bt-assets-total: 'Total DINGO assets of exchange: '
+        bp-assets-total: 'Total DINGO assets of exchange: '
+        ap-assets-total: 'Total BCH assets of exchange: '
       liability_proof:
         title: Proof of Liabilities
         intro: As an exchange, our liabilities refer to the sum of money (in both
@@ -2225,6 +2630,36 @@ en:
         intro: All of exchange's RTM assets are listed here.
         total: Total RTM Assets
         address: Address
+      gc_assets:
+        title: PA Assets
+        intro: All of exchange's PA assets are listed here.
+        total: Total PA Assets
+        address: Address
+      fm_assets:
+        title: NS Assets
+        intro: All of Exchange's NS assets are listed here.
+        total: Total NS Assets
+        address: Address
+      bs_assets:
+        title: DINGO Assets
+        intro: All of Exchange's DINGO assets are listed here.
+        total: Total DINGO Assets
+        address: Address
+      bt_assets:
+        title: DINGO Assets
+        intro: All of Exchange's DINGO assets are listed here.
+        total: Total DINGO Assets
+        address: Address
+      bp_assets:
+        title: DINGO Assets
+        intro: All of Exchange's DINGO assets are listed here.
+        total: Total DINGO Assets
+        address: Address
+      ap_assets:
+        title: BCH Assets
+        intro: All of Exchange's BCH assets are listed here.
+        total: Total BCH Assets
+        address: Address
       brl_assets:
         title: BRL Assets
         intro: All of exchange's BRL assets are listed here.
@@ -2264,6 +2699,12 @@ en:
         et_format: '0.00000000'
         hv_format: '0.00000000'
         gp_format: '0.00000000'
+        gc_format: '0.00000000'
+        fm_format: '0.00000000'
+        bs_format: '0.00000000'
+        bt_format: '0.00000000'
+        bp_format: '0.00000000'
+        ap_format: '0.00000000'
         reason:
           brl:
             strike_add: Plus
@@ -2409,6 +2850,42 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          gc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          fm:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bs:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bt:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ap:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
         ref:
           system: System
           default: Default
@@ -2428,20 +2905,20 @@ en:
         id_document_number: Identity Document Number
         id_document_file: Identity Document Photo
         id_bill_type: Identity Proof Type
-        id_bill_file: Selfie with your Identity Document
+        id_bill_file: Selfie with your Identity Document and a Piece of Paper stating todays date and "AUTRADEX"
         warning: This information will be used for the Two-Factor Authentication recovery procedure and large withdrawals activation. 
           Please, take it seriously, if we are not able to verify your identity in the future - then we can not help you recover your Google's Authenticator token.
       update:
         notice: Your account verification has been submitted.
     markets:
       show:
-        error: Failed
+        error: Fee Too Low
         success: Success
         analysis_panel: Analysis
         help_panel: Help
         done: DONE
         cancel: CANCEL
-        cancel_confirm: Are your sure cancel order?
+        cancel_confirm: Confirm cancel order?
         confirm: CONFIRM
         ask_order: 'ASK ##sn#'
         bid_order: 'BID ##sn#'
@@ -2475,6 +2952,12 @@ en:
         et_html: "<i class='fa fa-check'></i><span>MCC Markets</span>"
         hv_html: "<i class='fa fa-check'></i><span>UQB Markets</span>"
         gp_html: "<i class='fa fa-check'></i><span>RTM Markets</span>"
+        gc_html: "<i class='fa fa-check'></i><span>PA Markets</span>"
+        fm_html: "<i class='fa fa-check'></i><span>NS Markets</span>"
+        bs_html: "<i class='fa fa-check'></i><span>DINGO Markets</span>"
+        bt_html: "<i class='fa fa-check'></i><span>DINGO Markets</span>"
+        bp_html: "<i class='fa fa-check'></i><span>DINGO Markets</span>"
+        ap_html: "<i class='fa fa-check'></i><span>BCH Markets</span>"
         price: Price
         change: "24h"
       range_switch:
@@ -2692,6 +3175,12 @@ en:
         et_format: '0.00000000'
         hv_format: '0.00000000'
         gp_format: '0.00000000'
+        gc_format: '0.00000000'
+        fm_format: '0.00000000'
+        bs_format: '0.00000000'
+        bt_format: '0.00000000'
+        bp_format: '0.00000000'
+        ap_format: '0.00000000'
         total: Total
   guides:
     private:
@@ -2865,6 +3354,24 @@ en:
         gp:
           sum: Minimum amount 50
           fund_extra: Enter a label for this address (optional)
+        gc:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        fm:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        bs:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        bt:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        bp:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
+        ap:
+          sum: Minimum amount 50
+          fund_extra: Enter a label for this address (optional)
     hints:
       deposit:
         bank:
@@ -2936,6 +3443,18 @@ en:
         hv:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
         gp:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        gc:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        fm:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bs:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bt:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bp:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        ap:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -3133,6 +3652,48 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
+        gc:
+          fee: Fee
+          sum: Amount
+          fund_uid: PA Coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        fm:
+          fee: Fee
+          sum: Amount
+          fund_uid: NS Coin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bs:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dingocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bt:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dingocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bp:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dingocoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        ap:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bitcoin Cash Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
   admin:
     deposits:
       banks:
@@ -3276,6 +3837,42 @@ en:
           accept: Accept
           accept_confirm: Confirm deposit?
       gps:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      gcs:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      fms:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bs:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bts:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bps:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      aps:
         update:
           notice: The deposit was successful.
         index:
@@ -3618,6 +4215,78 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      gcs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      fms:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bts:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bps:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      aps:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
   deposits/satoshi:
     aasm_state:
       submitted: Submitted
@@ -3745,6 +4414,42 @@ en:
       checked: Checked
       warning: Warning
   deposits/gp:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/gc:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/fm:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bs:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bt:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bp:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/ap:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -3983,6 +4688,54 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    gc:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    fm:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bs:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bt:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bp:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    ap:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     bank:
       sn: SN
       amount: Amount
@@ -4036,6 +4789,12 @@ en:
       et: MCC
       hv: UQB
       gp: RTM
+      gc: PA
+      fm: NS
+      bs: DINGO
+      bt: DINGO
+      bp: DINGO
+      ap: BCH
     order:
       state:
         done: DONE
@@ -4084,6 +4843,12 @@ en:
         et: MinecraftCoin
         hv: Ubiquitium
         gp: Raptoreum
+        gc: Polar Coin
+        fm: Nodestats Coin
+        bs: Dingocoin
+        bt: Dingocoin
+        bp: Dingocoin
+        ap: Bitcoin Cash
         bank: Bank
     id_document:
       id_document_type:
@@ -4729,6 +5494,48 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
+    gc:
+      key: Blockchain
+      title: PA Blockchain
+      intro: Withdraw PA Coin to your own PA wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    fm:
+      key: Blockchain
+      title: NS Blockchain
+      intro: Withdraw NS Coin to your own NS wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    bs:
+      key: Blockchain
+      title: DINGO Blockchain
+      intro: Withdraw DINGO to your own DINGO wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    bt:
+      key: Blockchain
+      title: DINGO Blockchain
+      intro: Withdraw DINGO to your own DINGO wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    bp:
+      key: Blockchain
+      title: DINGO Blockchain
+      intro: Withdraw DINGO to your own DINGO wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    ap:
+      key: Blockchain
+      title: BCH Blockchain
+      intro: Withdraw BCH to your own BCH wallet
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
   listing_requests:
     new:
       title: Listing request
@@ -5028,6 +5835,78 @@ en:
       canceled: Cancelled
       failed: Failed
   withdraws/gp:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/gc:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/fm:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bs:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bt:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bp:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/ap:
     aasm_state:
       submitting: Submitting
       submitted: Submitted

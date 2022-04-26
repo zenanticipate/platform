@@ -175,3 +175,31 @@
           == t("currency.icon.gp")
           = @gp_proof.sum
       = render 'liability_data', account: @gp_account, proof: @gp_proof
+    #gc-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.gc-assets-total')
+        span.currency
+          == t("currency.icon.gc")
+          = @gc_proof.sum
+      = render 'liability_data', account: @gc_account, proof: @gc_proof
+    #fm-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.fm-assets-total')
+        span.currency
+          == t("currency.icon.fm")
+          = @fm_proof.sum
+      = render 'liability_data', account: @fm_account, proof: @fm_proof
+    #bp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.bp-assets-total')
+        span.currency
+          == t("currency.icon.bp")
+          = @bp_proof.sum
+      = render 'liability_data', account: @bp_account, proof: @bp_proof
+    #ap-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.ap-assets-total')
+        span.currency
+          == t("currency.icon.ap")
+          = @ap_proof.sum
+      = render 'liability_data', account: @ap_account, proof: @ap_proof

@@ -75,7 +75,7 @@ class Account < ActiveRecord::Base
   end
 
   def unlock_funds(amount, reason: nil, ref: nil)
-    (amount <= ZERO or amount > self.locked) and raise AccountError, "cannot unlock funds (amount: #{amount})"
+    #(amount <= ZERO or amount > self.locked) and raise AccountError, "cannot unlock funds (amount: #{amount})"
     change_balance_and_locked amount, -amount
   end
 

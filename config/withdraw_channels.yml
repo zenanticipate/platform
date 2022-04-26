@@ -2,7 +2,7 @@
   key: satoshi
   currency: btc
   fixed: 8
-  fee: 0.0004
+  fee: 0.001
   max: 0.1
   inuse: true
   type: WithdrawChannelSatoshi
@@ -21,8 +21,8 @@
   key: doge
   currency: doge
   fixed: 8
-  max: 100000
-  fee: 50.00
+  max: 10000
+  fee: 20.00
   inuse: true
   type: WithdrawChannelDoge
 - id: 800
@@ -184,3 +184,44 @@
   fee: 0.01
   inuse: true
   type: WithdrawChannelGp
+- id: 4800
+  key: gc
+  currency: gc
+  fixed: 8
+  fee: 5
+  inuse: true
+  type: WithdrawChannelGc
+- id: 5000
+  key: fm
+  currency: fm
+  fixed: 8
+  fee: 1
+  inuse: true
+  type: WithdrawChannelFm
+- id: 5200
+  key: bs
+  currency: bs
+  fixed: 8
+  fee: 15
+  inuse: false
+  type: WithdrawChannelBs
+- id: 5400
+  key: bt
+  currency: bt
+  fixed: 8
+  fee: 15
+  inuse: false
+  type: WithdrawChannelBt
+- id: 5600
+  key: bp
+  currency: bp
+  fixed: 8
+  fee: 150
+  inuse: false
+  type: WithdrawChannelBp
+- id: 5800
+  key: ap
+  currency: ap
+  fee: 0.1
+  inuse: true
+  type: WithdrawChannelAp

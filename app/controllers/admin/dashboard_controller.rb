@@ -21,12 +21,12 @@ module Admin
         slice = res['result'].to_i
       end
 
-      sql = "select created_at, btc, ltc, doge, spero, mxt, rvn, da, ac, ep, ad, bd, hb, am, at, fz, ew, an, fj, ba, et, hv, gp from turnover_summary where slice = #{slice}"
+      sql = "select created_at, btc, ltc, doge, spero, mxt, rvn, da, ac, ep, ad, bd, hb, am, at, fz, ew, an, fj, ba, et, hv, gp, gc, fm, bp, ap from turnover_summary where slice = #{slice}"
       res = ActiveRecord::Base.connection.exec_query(sql)
 
       @turnover = []
       res.each do |day| 
-        @turnover.push ( {:date => day['created_at'].strftime("%Y-%m-%d"), :btc => day['btc'], :ltc => day['ltc'], :doge => day['doge'], :spero => day['spero'], :mxt => day['mxt'], :rvn => day['rvn'], :da => day['da'], :ac => day['ac'], :ep => day['ep'], :ad => day['ad'], :bd => day['bd'], :hb => day['hb'], :am => day['am'], :at => day['at'], :fz => day['fz'], :ew => day['ew'], :an => day['an'], :fj => day['fj'], :ba => day['ba'], :et => day['et'], :hv => day['hv'], :gp => day[gp] })
+        @turnover.push ( {:date => day['created_at'].strftime("%Y-%m-%d"), :btc => day['btc'], :ltc => day['ltc'], :doge => day['doge'], :spero => day['spero'], :mxt => day['mxt'], :rvn => day['rvn'], :da => day['da'], :ac => day['ac'], :ep => day['ep'], :ad => day['ad'], :bd => day['bd'], :hb => day['hb'], :am => day['am'], :at => day['at'], :fz => day['fz'], :ew => day['ew'], :an => day['an'], :fj => day['fj'], :ba => day['ba'], :et => day['et'], :hv => day['hv'], :gp => day[gp], :gc => day[gc], :fm => day[fm], :bp => day[bp], :ap => day[ap] })
       end
     end
 

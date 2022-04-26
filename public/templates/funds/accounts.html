@@ -1,6 +1,7 @@
 <table class="table table-currencies" ng-repeat="account in accounts" bind="accounts">
 
-  <tr ng-if="account.currency == 'btc' || account.currency == 'ltc' || account.currency == 'doge' || account.currency == 'rvn' || account.currency == 'da' || account.currency == 'ac' || account.currency == 'ad' || account.currency == 'bd' || account.currency == 'am' || account.currency == 'at' || account.currency == 'hb' || account.currency == 'fz' || account.currency == 'ep' || account.currency == 'ew' || account.currency == 'an' || account.currency == 'fj' || account.currency == 'ba' || account.currency == 'et' || account.currency == 'hv' || account.currency == 'gp'" class="currency-item" ng-class="{selected: accountsCtrl.isSelected(account.currency),
+  <tr ng-if="account.currency == 'btc' || account.currency == 'ltc' || account.currency == 'doge' || account.currency == 'rvn' || account.currency == 'bp' || account.currency == 'ac' || account.currency == 'ad' || account.currency == 'gp'" class="currency-item" ng-class="{selected: accountsCtrl.isSelected(account.currency),
+
     'deposit-now': accountsCtrl.isDeposit(),
     'withdraw-now': accountsCtrl.isWithdraw() }"
     data-currency="{{account.currency}}">

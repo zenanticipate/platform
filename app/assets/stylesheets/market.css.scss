@@ -511,7 +511,8 @@ left_side_tabs_wrapper {
     td.price {
        .fill { color: #333; }
        .satoshi { color: #777; } /*2EB5DD*/
-       .satoshi-hide { color: #333; } /*2E4582*/
+       .satoshi-hide { color: #333; font-size: 10px; } /*2E4582*/
+       .subsat { color: #ddd; font-size: 10px; }
       }
 
     .new {
@@ -593,7 +594,8 @@ left_side_tabs_wrapper {
     td.price {
        .fill { color: #333; }
        .satoshi { color: #777; } /*2EB5DD*/
-       .satoshi-hide { color: #333; } /*2E4582*/
+       .satoshi-hide { color: #333; font-size: 10px; } /*2E4582*/
+       .subsat { color: #ddd; font-size: 10px; }
       }
   }
 
@@ -637,7 +639,8 @@ left_side_tabs_wrapper {
       td.price {
         .fill { color: #333; }
         .satoshi { color: #777; } /*2EB5DD*/
-        .satoshi-hide { color: #333; } /*2E4582*/
+        .satoshi-hide { color: #333; font-size: 10px; } /*2E4582*/
+        .subsat { color: #ddd; font-size: 10px; }
     }
 
       td.change {
@@ -832,7 +835,7 @@ left_side_tabs_wrapper {
   input[type=checkbox].css-checkbox + label.css-label 
   { padding-left:15px; height:13px;  display:inline-block; line-height:13px; background-repeat:no-repeat; background-position: 0 0; font-size:13px; vertical-align:middle; cursor:pointer; } 
 
-  input[type=checkbox].css-checkbox:checked  + label.css-label { background-position: 0 -13px; }  .css-label{ background-image:url(https://exchange.sperocoin.org/lite-x-red-13-3.png); }
+  input[type=checkbox].css-checkbox:checked  + label.css-label { background-position: 0 -13px; }  .css-label{ background-image:url(https://wallet.autradex.systems/lite-x-red-13-3.png); }
 
   .row-tips {
     margin-top: 18px;

@@ -39,5 +39,10 @@ class Withdraw extends PeatioModel.Model
       when 'et' then 'ets'
       when 'hv' then 'hvs'
       when 'gp' then 'gps'
+      when 'gc' then 'gcs'
+      when 'fm' then 'fms'
+      when 'bt' then 'bts'
+      when 'bp' then 'bps'
+      when 'ap' then 'aps'
 
 window.Withdraw = Withdraw

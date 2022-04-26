@@ -28,6 +28,12 @@ module Private
       @et_proof   = Proof.current :et
       @hv_proof   = Proof.current :hv
       @gp_proof   = Proof.current :gp
+      @gc_proof   = Proof.current :gc
+      @fm_proof   = Proof.current :fm
+      @bs_proof   = Proof.current :bs
+      @bt_proof   = Proof.current :bt
+      @bp_proof   = Proof.current :bp
+      @ap_proof   = Proof.current :ap
       #proof
 
       if current_user
@@ -55,6 +61,12 @@ module Private
         @et_account = current_user.accounts.with_currency(:et).first
         @hv_account = current_user.accounts.with_currency(:hv).first
         @gp_account = current_user.accounts.with_currency(:gp).first
+        @gc_account = current_user.accounts.with_currency(:gc).first
+        @fm_account = current_user.accounts.with_currency(:fm).first
+        @bs_account = current_user.accounts.with_currency(:bs).first
+        @bt_account = current_user.accounts.with_currency(:bt).first
+        @bp_account = current_user.accounts.with_currency(:bp).first
+        @ap_account = current_user.accounts.with_currency(:ap).first
         #account
       end
     end

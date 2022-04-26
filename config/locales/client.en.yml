@@ -73,6 +73,12 @@ en:
         et: MCC
         hv: UQB
         gp: RTM
+        gc: PA
+        fm: NS
+        bs: DINGO
+        bt: DINGO
+        bp: DINGO
+        ap: BCH
       deposit_brl:
         title: Depósito em Reais Brasileiros
         desc: "ATENÇÃO! ESTE PAINEL É DE USO APENAS PARA USUÁRIOS BRASILEIROS. Para depositar via transferência bancária, siga estas etapas:"
@@ -108,7 +114,7 @@ en:
 
       deposit_spero:
         title: AUTRADEX Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_mxt:
         title: MXT Deposit
@@ -116,71 +122,95 @@ en:
 
       deposit_rvn:
         title: RVN Deposit
-        latency: 20 Confirmations Required For Deposits
+        latency: 30 Confirmations Required For Deposits
 
       deposit_da:
         title: GENIX Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_ac:
         title: AUS Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_ep:
         title: KONJ Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_ad:
         title: AUTX Deposit
-        latency: 5 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_bd:
         title: DLN Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_hb:
         title: STONE Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_am:
         title: BBX Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_at:
         title: BNJ Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_fz:
         title: PGN Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_ew:
         title: MW Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_an:
         title: BARE Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_fj:
         title: MnodesPro Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_ba:
         title: Dequant Deposit
-        latency: 10 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_et:
         title: Minecraft Coin Deposit
-        latency: 50 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_hv:
         title: Ubiquitium Coin Deposit
-        latency: 25 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
 
       deposit_gp:
         title: Raptoreum Coin Deposit
-        latency: 15 Confirmations Required For Deposits
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_gc:
+        title: Polar Coin Deposit
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_fm:
+        title: Nodestats Coin Deposit
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_bs:
+        title: Dingocoin Deposit
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_bt:
+        title: Dingocoin Deposit
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_bp:
+        title: Dingocoin Deposit
+        latency: 100 Confirmations Required For Deposits
+
+      deposit_ap:
+        title: Bitcoin Cash Deposit
+        latency: 10 Confirmations Required For Deposits
 
       deposit_coin:
         address: Address
@@ -296,10 +326,28 @@ en:
       withdraw_gp:
         title: Raptoreum Coin Withdraw
 
+      withdraw_gc:
+        title: Polar Coin Withdraw
+
+      withdraw_fm:
+        title: Nodestats Coin Withdraw
+
+      withdraw_bs:
+        title: Dingocoin Withdraw
+
+      withdraw_bt:
+        title: Dingocoin Withdraw
+
+      withdraw_bp:
+        title: Dingocoin Withdraw
+
+      withdraw_ap:
+        title: Bitcoin Cash Withdraw
+
       withdraw_coin:
         intro: Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes
-        withdraw_limit_btc: Withdraw day limit is 0.1 for an unverified account. Fee 0.0004 BTC.
-        withdraw_limit_doge: Withdraw day limit is 100 000 for an unverified account. Fee 50 Doge.
+        withdraw_limit_btc: Withdraw day limit is 0.1 for an unverified account. Fee 0.001 BTC.
+        withdraw_limit_doge: Withdraw day limit is 10 000 for an unverified account. Fee 20 Doge.
         withdraw_limit_ltc: Withdraw day limit is 20 for an unverified account. Fee 0.04 LTC
         withdraw_limit_spero: Withdraw day limit is 10 000 for an unverified account.
         withdraw_limit_mxt: Withdraw day limit is 10 000 for an unverified account.
@@ -312,7 +360,7 @@ en:
         withdraw_limit_hb: Fee 10 STONE
         withdraw_limit_am: Fee 0.01 BBX
         withdraw_limit_at: Fee 1 BNJ
-        withdraw_limit_fz: Fee 10 PGN
+        withdraw_limit_fz: Fee 1 PGN
         withdraw_limit_ew: Fee 0.5 MW
         withdraw_limit_an: Fee 0.5 BARE
         withdraw_limit_fj: Fee 0.01 MNS
@@ -320,6 +368,12 @@ en:
         withdraw_limit_et: Fee 1
         withdraw_limit_hv: Fee 1
         withdraw_limit_gp: Fee 0.01
+        withdraw_limit_gc: Fee 5
+        withdraw_limit_fm: Fee 1
+        withdraw_limit_bs: Fee 15
+        withdraw_limit_bt: Fee 15
+        withdraw_limit_bp: Fee 150
+        withdraw_limit_ap: Fee 0.1
 
         label: Label
         balance: Balance
@@ -394,6 +448,12 @@ en:
         et: MCC Market
         hv: UBQ Market
         gp: RTM Market
+        gc: PA Market
+        fm: NS Market
+        bs: DINGO Market
+        bt: DINGO Market
+        bp: DINGO Market
+        ap: BCH Market
 
     private:
       history:

@@ -71,17 +71,14 @@ class Formatter
     fill_length = 8
     right_length = right.length
 
-    if right_length > fill_length
-      right_length = fill_length
-
     result = ""
     if fill = @ticker_fill[fill_length-right_length]
-      result = "#{left}.<g>#{right}</g><span class='fill'>#{fill}</span>"
+      result = "#{left}.<g>#{right}</g><span class='satoshi'>#{fill}</span>"
     else
       result = "#{left}.<g>#{right.slice(0,fill_length)}</g>"
 
     if fillTo-right.length == 0
-      result += "<span class='satoshi'>#{right[fillTo-1]}</span>"
+      result += "<span class='subsat'>#{right[fillTo-1]}</span>"
     else
       result += "<span class='satoshi-hide'>0</span>"
 

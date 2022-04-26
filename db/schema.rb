@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210301103424) do
+ActiveRecord::Schema.define(version: 20210614122736) do
 
   create_table "account_versions", force: true do |t|
     t.integer  "member_id"
@@ -541,6 +541,12 @@ ActiveRecord::Schema.define(version: 20210301103424) do
     t.decimal  "et",         precision: 32, scale: 16
     t.decimal  "hv",         precision: 32, scale: 16
     t.decimal  "gp",         precision: 32, scale: 16
+    t.decimal  "gc",         precision: 32, scale: 16
+    t.decimal  "fm",         precision: 32, scale: 16
+    t.decimal  "bs",         precision: 32, scale: 16
+    t.decimal  "bt",         precision: 32, scale: 16
+    t.decimal  "bp",         precision: 32, scale: 16
+    t.decimal  "ap",         precision: 32, scale: 16
   end
 
   add_index "turnover_summary", ["created_at"], name: "index_turnover_summary_on_created_at", using: :btree
